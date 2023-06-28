@@ -7,12 +7,13 @@
     font-family: FiraGO;
 }
 body {
-    min-height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Capture.PNG);
-    background-size: cover;
+    /* min-height: 100%; */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Capture.PNG); */
+    /* background-size: cover;
     background-repeat: no-repeat;
     background-position: center ;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+    overflow-x: hidden; 
 }
 
 @font-face{
@@ -71,7 +72,7 @@ body {
     height: 30px;
     align-items: center;
     justify-content: center;
-    margin: 34px 174px auto auto;
+    margin: 34px 74px auto auto;
     border-radius: 30px;
  }
  .language_changer_div p{
@@ -108,10 +109,26 @@ body {
     padding-right: 11vw;
 
  }
+ .img-slide{
+    position: absolute;
+   margin-left: -11.5vw;
+   /* width: 101%; */
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    clip-path: circle(0% at 0 50%);
+ }
+ .img-slide.active{
+   clip-path:none;
+   transition: 2s ease;
+   transition-property: clip-path;
+ }
  .soflis_meurneobis_statistikis_portali{
     padding-top: 200px;
     font-size: 50px;
     color: #ffffff;
+    position: relative;
  }
  .five_div{
     display: flex;
@@ -128,7 +145,7 @@ body {
     background-color: #ffffff;
     border-radius: 20px;
     position: relative;
-    transition: 1s;
+    transition: 0.5s;
  }
  .five_div_1:hover, 
  .five_div_2:hover, 
@@ -189,6 +206,7 @@ body {
     width: 40px;
     height: 40px;
     transition: 1s;
+    margin-bottom:-5px;
  }
 
  .five_div_1_h3,
@@ -218,7 +236,7 @@ body {
     position: absolute;
     bottom: 22px;
     left: 50%;
-transform: translateX(-50%);
+   transform: translateX(-50%);
  }
  .five_div_1_show_button,
  .five_div_2_show_button,
@@ -232,15 +250,18 @@ transform: translateX(-50%);
     height: 1px;
     background-color: #ffffff;
     margin-top: 40px;
+    position: relative;
  }
  .small_text_p{
     font-size: 16px;
     color: #ffffff;
     margin-top: 30px;
+    position: relative;
  }
  .arrow_div{
     display: flex;
     margin-top: 26px;
+    position: relative;
  }
  .fa-arrow-right,
  .fa-arrow-left{
@@ -249,10 +270,15 @@ transform: translateX(-50%);
  }
 
  .count_div{
-    display: flex;
+    display: none;
     justify-content: space-between;
     margin-top: 32px;
  }
+ .count_div.active{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 32px;
+}
  .count_div_1,
  .count_div_2,
  .count_div_3,
@@ -295,16 +321,35 @@ transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
     width: 150px;
-    margin: 40px auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
  }
- .circle_div_dot1,
- .circle_div_dot2,
- .circle_div_dot3,
- .circle_div_dot4,
- .circle_div_dot5{
+ 
+ .circle_div_dot{
     width:20px;
     height: 20px;
-    background:rgba(233, 232, 232, 0.096);
+    box-shadow:rgba(233, 232, 232, 0.096);
     border-radius: 50%;
     border: 1px solid #ece2e2;
+    transition: 0.3s ease;
  }
+ 
+ .circle_div_dot.active{
+    background: #ffffff;
+ }
+ /* .circle_div_dot1.active:not(:last-child),
+ .circle_div_dot2.active:not(:last-child),
+ .circle_div_dot3.active:not(:last-child),
+ .circle_div_dot4.active:not(:last-child),
+ .circle_div_dot5.active:not(:last-child){
+    margin-right:20px;
+ } */
+ 
+ .circle_div_dot:hover{
+    transform: scale(1);
+    cursor: pointer;
+ }
+
+ 
