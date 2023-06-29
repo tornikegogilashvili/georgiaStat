@@ -1,0 +1,16 @@
+
+.nav ul{
+    display: flex;
+    position: absolute;
+    left: 450px;
+    top: 30px;
+}
+.nav ul li{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.nav ul li a{
+    color: #1D4657;
+}

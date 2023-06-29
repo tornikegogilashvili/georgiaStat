@@ -34,30 +34,30 @@ body {
     background-image: url(../images/ლოგო\ -\ საქსტატი.png);
     background-repeat: no-repeat;
     background-size: 100%; 
-    width:78px;
-    height: 50px;
+    width:70px;
+    height: 46px;
     position: absolute;
     top: 25px;
     text-indent: -999px;
 }
 .header_h1_logo a{
-    width:90px;
-    height: 50px;
+    width:82px;
+    height: 46px;
     display: block;
 }
 .header_h1_text{
     background-image: url(../images/საქართველოს\ სტატისტიკის\ ეროვნული\ სამსახური.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    width:220px;
+    width:200px;
     height: 40px;
     position: absolute;
     top: 40px;
-    left:17.56vw;
+    left:17vw;
  }
  .header_h1_text a{
-    width:220px;
-    height: 40px;
+    width:200px;
+    height: 36px;
     display: block;
     padding: 10px;
  }
@@ -68,11 +68,11 @@ body {
     border: 1px solid #808184;
     display: flex;
     /* padding: 15px; */
-    width:88px;
+    width:80px;
     height: 30px;
     align-items: center;
     justify-content: center;
-    margin: 34px 74px auto auto;
+    margin: 34px 44px auto auto;
     border-radius: 30px;
  }
  .language_changer_div p{
@@ -81,7 +81,7 @@ body {
     font-size: 11px;
  }
  .fa-solid{
-    font-size: 16px;
+    font-size: 14px;
  }
  .socialnetwork_div{
     display: flex;
@@ -89,7 +89,7 @@ body {
     justify-content: center;  
     margin-top: 34px;
     margin-right: 10px;
-    width:88px;
+    width:80px;
     height: 30px;
  }
  .socialnetwork_div p{
@@ -97,7 +97,7 @@ body {
     color: #808184;
  }
  .twitter_p{
-    padding: 30px;
+    padding: 15px;
  }
 
 
@@ -244,6 +244,25 @@ body {
  .five_div_4_show_button,
  .five_div_5_show_button{
    cursor: pointer;
+ }
+ .five_div_1_show_button a ,
+ .five_div_2_show_button a,
+ .five_div_3_show_button a,
+ .five_div_4_show_button a ,
+ .five_div_5_show_button a{
+   width: 150px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    /* margin: 25px auto auto auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #000000;
+    /* bottom: 22px; */
+    left: 50%;
+   transform: translateX(-50%);
  }
  .line_div{
     width:100%;
