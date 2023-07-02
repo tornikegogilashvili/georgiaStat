@@ -1,4 +1,11 @@
-
+#body{
+    background-color: #F5F5F5;
+}
+.header{
+    box-shadow:1px 1px 20px #abacad;
+    position: relative;
+    z-index: 56;
+}
 .nav ul{
     display: flex;
     position: absolute;
@@ -13,4 +20,224 @@
 }
 .nav ul li a{
     color: #1D4657;
+}
+.active_li{
+    border-bottom: 2px solid #1D4657;
+}
+
+.machveneblebi_main_div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin-top: 80px;
+    width: 1000px;
+    margin: 20px auto;
+}
+.machveneblebi_main_div_rva{
+    /* width: 180px; */
+    height: 170px;
+    margin-bottom:100px ;
+    position: relative;
+}
+.machveneblebi_main_div_rva img{
+    /* width: 250px; */
+    height: 240px;
+}
+.machveneblebi_main_div_white_div{
+    width: 130px;
+    height: 70px;
+    background-color: #ffffff;
+    position: absolute;
+    font-size: 12px;
+    padding-top:30px;
+    box-shadow: 1px 1px 15px #868686;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    transform: translateX(-50%);
+    left:50%;
+}
+.machveneblebi_main_div_white_div:hover{
+    cursor: pointer;
+}
+.machveneblebi_main_div_white_div_green{
+    width: 50px;
+    height: 50px;
+    background-color: #005F15;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.machveneblebi_main_div_white_div_green img{
+    width: 50%;
+    height: 50%;
+    
+}
+.ge45 img{
+    width: 60%;
+    height: 40%;
+}
+.right_side_socialNetwork{
+    width: 50px;
+    /* height: 300px; */
+    background-color: #1D4657;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 557;
+}
+.right_side_socialNetwork img{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 20px;
+}
+/* -----------footer--------- */
+
+
+.footer{
+    width: 100%;
+    background-color: #1D4657;
+}
+.footer_three_div{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 9vw;
+    padding-right: 9vw;
+}
+.footer_three_div_1_h3{
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.footer_three_div_1 p{
+    font-size: 12px;
+    color: #ffffff;
+    padding-top: 10px;
+}
+.socialNetwork_footer_div{
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 9vw;
+    padding-right: 9vw;
+}
+
+.socialNetwork_footer_div_imgs{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.socialNetwork_footer_div_imgs .TWW{
+    padding:0 20px
+}
+
+.socialNetwork_footer_div_satauri{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-top: 30px;
+}
+.footer_line_div{
+    width:100%;
+    height: 1px;
+    margin-top: 30px;
+    background-color: #D9D9D9;
+}
+.footer_uflebebis_dacva{
+    padding: 30px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+/* ---------------
+----------------
+---------------
+--------------- */
+
+.gender_page{
+    background-color: #F5F5F5;
+    width: 100%;
+    position: relative;
+    z-index: 55;
+}
+.gender_page_main_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.gender_search{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #a8a6a6;
+    padding: 15px;
+    background-color: #ffffff;
+    margin-right: 20px;
+}
+.gender_lebel_awesome{
+    display: flex;
+    font-size: 16px;
+}
+.gender_lebel_awesome i{
+    color: #005F15;
+    font-size: 18px;
+    margin-right: 15px;
+}
+.gender_search input{
+    height: 40px;
+    margin-top: 15px;
+    width: 100%;
+}
+.gender_line_div{
+    width: 100%;
+    background-color: #a8a6a6;
+    height: 1px;
+    margin-top: 20px;
+}
+.gender_submit{
+    border-radius: 5px;
+    background-color: #005F15;
+    box-shadow: unset;
+    color: #ffffff;
+    border: none;
+}
+.gender_submit:hover{
+    cursor: pointer;
+}
+.gender_ganawileba_div{
+    background-color: #ffffff;
+    padding: 30px;
+    height: 500px;
+}
+.gender_ganawileba_div_satauri{
+    display: flex;
+    justify-content: space-between;
+}
+.gender_ganawileba_div p {
+    margin-right: 25px;
+}
+.gender_ganawileba_div i {
+    font-size: 18px;
 }

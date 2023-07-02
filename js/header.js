@@ -1,14 +1,15 @@
 const navBar = ["მემცენარეობა", "მეცხოველეობა", "სასურსათო <br> ბალანსი", "აკვაკულტურა", "ძირითადი <br>მაჩვენებლები"];
 const navLink = ["memcenareoba.html", "mecxoveleoba.html", "sasursatoBalansi.html", "akvakultura.html", "dziritadiMachveneblebi.html"]
-let navText = "<ul>";
+let navText = "<ul id="+"dziritadi_nav_ul"+">";
 let navbarlength = navBar.length;
 
 for (let i = 0; i < navbarlength; i++){
-    navText += "<li><a href="+navLink[i]+">" + navBar[i] + "</a></li>"
+    navText += "<li id="+"dziritadi_nav_ul_li"+" class="+"dziritadi_nav_ul_li"+"><a href="+navLink[i]+">" + navBar[i] + "</a></li>"
 }
 navText += "</ul>"
 
-const headerInfo = `<header id="header" class="header">
+
+const headerInfo = `
 <h1 class="header_h1_logo" ><a href="index.html" >საქართველოს სტატისტიკის ეროვნული სამსახური</a></h1>
 <h1 class="header_h1_text" ><a href="index.html" ></a></h1>
 <nav class="nav" >${navText}</nav>
@@ -23,7 +24,18 @@ const headerInfo = `<header id="header" class="header">
         <p class="twitter_p"><i class="fa-brands fa-twitter"></i></p>
         <p><i class="fa-brands fa-linkedin-in"></i></p>
     </div>
-</div>
-</header>`
+</div>`
 
-document.getElementById("body").innerHTML = headerInfo;
+document.getElementById("header").innerHTML = headerInfo;
+
+
+
+
+
+// $('.navbar-nav').on('click', 'li', function() {
+//     $('.navbar-nav li.active').removeClass('active');
+//     $(this).addClass('active');
+//   });
+
+
+ 
