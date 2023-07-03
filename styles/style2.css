@@ -188,13 +188,19 @@
     margin-top: 50px;
 }
 .gender_search{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 500px;
     border-radius: 5px;
     border: 1px solid #a8a6a6;
     padding: 15px;
     background-color: #ffffff;
     margin-right: 20px;
+}
+.dziritadimachveneblebi_search{
+    height: 200px;
+}
+.mecxoveleoba_search{
+    height: 390px;
 }
 .gender_lebel_awesome{
     display: flex;
@@ -236,8 +242,225 @@
     justify-content: space-between;
 }
 .gender_ganawileba_div p {
-    margin-right: 25px;
+    margin-right: 100px;
 }
 .gender_ganawileba_div i {
     font-size: 18px;
 }
+
+
+
+/* -----------------
+-----------------
+-----------------
+memcenareoba.html
+-------------------
+-------------------- */
+
+.memcenareoba_nav_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.memcenareoba_nav_div_1234{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #abacad;
+    border-radius: 15px;
+    width: 250px;
+}
+.memcenareoba_nav_div_1234:first-child{
+    background-color: #1D4657;
+}
+.memcenareoba_nav_div_1234:first-child div{
+    height: 45px;
+}
+.memcenareoba_nav_div_1234:first-child p{
+    color: #ffffff;
+}
+.memcenareoba_nav_div_1234:not(:last-child){
+    margin-right: 5px;
+}
+.memcenareoba_nav_div_1234 div{
+    padding: 10px;
+    background-color: #dfdfdf;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.memcenareoba_nav_div_1234 p{
+    font-size: 14px;
+    color: #1D4657;
+}
+
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+    .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  
+  .container input:checked ~ .checkmark {
+    background-color: #005F15;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+  .choose{
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+  }
+  .gender_search_regionebi_div{
+    display: flex;
+  }
+  .gender_search_regionebi_div img{
+    height: 25px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .gender_search_regionebi_div label{
+    padding-left: 5px;
+  }
+  .gender_lebel_awesome_mecxoveleoba img{
+    margin-right: 8px;
+    
+}
+.gender_lebel_awesome_mecxoveleoba{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.gender_lebel_awesome_sasursatoBalansi{
+    border: 1px solid #868686;
+    width: 300px;
+    height: 40px;
+
+}
+.foreigh_div{
+    display: flex;
+    margin-right: 10px;
+    width: 170px;
+    height: 35px;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+}
+.foreigh_div i{
+    font-size: 18px;
+    padding: 8px;
+    color: #005F15;
+}
+.foreigh_div select{
+    border: 1px solid #ffffff;
+}
+.choose_1{
+    width: 100%;
+    outline: none;
+    
+}
+.foreigh_div img{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sasursatoBalansi_search{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    /* height: 50px; */
+    border-radius: 5px;
+    border: 1px solid #a8a6a6;
+    padding: 5px;
+    background-color: #ffffff;
+    margin-right: 20px;
+}
+.sasursatoBalansi_search input{
+    height: 35px;
+    width: 30%;
+    margin-left: 10px;
+}
+.sasursatoBalansi_info{
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    border: 1px solid #a8a6a6;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #F1F6FF;
+}
+.sasursatoBalansi_info p{
+    font-size: 12px;
+    color: #1D4657;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px;
+}
+.sasursatoBalansi_info_p_2th{
+    margin:0 15px;
+}
+.sasursatoBalansi_info_p_1th{
+    /* border: 1px solid #a8a6a6; */
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #a8a6a6;
+}
+.sasursatoBalansi_ganawileba_div{
+    background-color: #ffffff;
+    padding: 30px;
+    height: 500px;
+    width: 80%;
+    margin:50px auto;
+}
+
